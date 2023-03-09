@@ -1,0 +1,9 @@
+name: Greeting Workflow           # ワークフロー名
+on: [push]                        # トリガーとなる GitHub イベント
+
+jobs:
+  job1:                           # ジョブ名
+    runs-on: ubuntu-latest        # ジョブの実行環境(runner)
+    steps:                        # ジョブのステップ
+      - name: Greeting
+        run: echo "Hello, world!"
